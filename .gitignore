@@ -1,0 +1,11 @@
+tsconfig.json.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
+lib/
+.npmrc
+
+# cti backups
+index.ts.bak

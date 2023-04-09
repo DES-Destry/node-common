@@ -1,0 +1,28 @@
+{
+  "name": "node-common",
+  "version": "1.0.0",
+  "description": "Common files to build Node.js applications",
+  "main": "index.js",
+  "repository": "https://github.com/DES-Destry/node-common",
+  "author": "Destry.Unimaster<dev.andrey.kirik@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "publish": "npm publish"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "eslint": "^8.28.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
