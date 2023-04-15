@@ -1,5 +1,5 @@
 {
-  "name": "node-common",
+  "name": "@des-destry/node-common",
   "version": "1.0.0",
   "description": "Common files to build Node.js applications",
   "main": "index.js",
