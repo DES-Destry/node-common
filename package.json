@@ -10,7 +10,8 @@
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
-    "publish": "npm publish"
+    "publish": "npm publish",
+    "semantic-release": "semantic-release --branches master"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
@@ -22,7 +23,8 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.7.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "semantic-release": "^21.0.1"
   },
   "dependencies": {
     "uuid": "^9.0.0"
