@@ -7,6 +7,9 @@
   "author": "Destry.Unimaster<dev.andrey.kirik@gmail.com>",
   "license": "MIT",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
