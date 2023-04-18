@@ -1,6 +1,6 @@
 {
   "name": "@destry.unimaster/node-common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common files to build Node.js applications",
   "main": "index.js",
   "repository": "https://github.com/DES-Destry/node-common",
@@ -15,7 +15,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "publish": "npm publish",
     "commit": "git-cz",
-    "semantic-release": "semantic-release --branches master"
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
