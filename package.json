@@ -1,19 +1,25 @@
 {
   "name": "@destry.unimaster/node-common",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Common files to build Node.js applications",
-  "main": "index.js",
-  "repository": "https://github.com/DES-Destry/node-common",
+  "main": "lib/index.js",
   "author": "Destry.Unimaster<dev.andrey.kirik@gmail.com>",
+  "repository": {
+    "url": "https://github.com/DES-Destry/node-common",
+    "type": "git"
+  },
   "license": "MIT",
   "private": false,
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
-    "publish": "npm publish",
+    "publish": "yarn publish",
     "commit": "git-cz",
     "semantic-release": "semantic-release"
   },
