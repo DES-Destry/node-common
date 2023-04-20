@@ -1,6 +1,6 @@
 {
   "name": "@destry.unimaster/node-common",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Common files to build Node.js applications",
   "main": "index.js",
   "repository": "https://github.com/DES-Destry/node-common",
