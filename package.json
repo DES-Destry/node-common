@@ -21,9 +21,10 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "publish": "yarn publish",
     "commit": "git-cz",
-    "semantic-release": "semantic-release"
+    "release": "semantic-release"
   },
   "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
@@ -34,7 +35,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.7.1",
-    "semantic-release": "^17.4.2",
+    "semantic-release": "^21.0.1",
     "typescript": "^5.0.4"
   },
   "dependencies": {
