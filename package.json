@@ -1,6 +1,6 @@
 {
   "name": "@destry.unimaster/node-common",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Common files to build Node.js applications",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
