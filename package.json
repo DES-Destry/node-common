@@ -4,6 +4,9 @@
   "description": "Common files to build Node.js applications",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "author": "Destry.Unimaster<dev.andrey.kirik@gmail.com>",
   "repository": {
     "url": "https://github.com/DES-Destry/node-common",
@@ -15,17 +18,19 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "webpack --mode production",
     "format": "prettier --write \"src/**/*.ts\"",
     "publish": "yarn publish",
     "commit": "git-cz",
     "release": "semantic-release"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.4",
     "@semantic-release/git": "^10.0.1",
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
+    "babel-loader": "^9.1.2",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "8.28.0",
     "eslint-config-node": "4.1.0",
@@ -34,7 +39,10 @@
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.7.1",
     "semantic-release": "^21.0.1",
-    "typescript": "^5.0.4"
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.2"
   },
   "dependencies": {
     "uuid": "^9.0.0"

@@ -27,6 +27,9 @@ jobs:
       - name: Install Deps
         run: yarn install --frozen-lockfile
 
+      - name: Build library
+        run: yarn build
+
       - name: Release new package
         run: yarn release
         env:
