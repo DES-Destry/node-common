@@ -3,7 +3,6 @@
   "version": "1.0.8",
   "description": "Common files to build Node.js applications",
   "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
