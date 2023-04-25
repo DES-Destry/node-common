@@ -21,7 +21,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "publish": "yarn publish",
     "commit": "git-cz",
-    "release": "semantic-release"
+    "release": "yarn publish && semantic-release"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
