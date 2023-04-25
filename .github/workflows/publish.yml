@@ -30,6 +30,13 @@ jobs:
       - name: Build library
         run: yarn build
 
+      - name: BREAK DUMB NPM ONCE
+        continue-on-error: true
+        run: yarn release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Release new package
         run: yarn release
         env:

@@ -17,11 +17,12 @@
     "access": "public"
   },
   "scripts": {
-    "build": "webpack --mode production",
+    "clean": "rimraf lib",
+    "build": "yarn clean && webpack --mode production",
     "format": "prettier --write \"src/**/*.ts\"",
     "publish": "yarn publish",
     "commit": "git-cz",
-    "release": "yarn publish && semantic-release"
+    "release": "semantic-release"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
