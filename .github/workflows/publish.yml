@@ -31,6 +31,7 @@ jobs:
         run: yarn build
 
       - name: BREAK DUMB NPM ONCE
+        id: break-npm
         continue-on-error: true
         run: yarn release
         env:
@@ -38,6 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release new package
+        if: steps.break-npm.outcome == 'failure' && steps.break-npm.conclusion == 'failure'
         run: yarn release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
