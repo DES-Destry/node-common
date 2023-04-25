@@ -10,3 +10,6 @@ yarn-error.log
 
 # cti backups
 index.ts.bak
+
+# MacOS useless files
+.DS_Store
